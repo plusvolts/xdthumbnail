@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html>
+<head>
+	<title>듀플래닛샘플</title>
+	<script src="/lib/jquery-1.8.3.js" type="text/javascript"></script>
+</head>
+<body style="margin:0 0 0 0; padding:0 0 0 0;overflow: hidden;">
+	<div id="mapArea" style="position:absolute; top:0px; left:0px;width:1000px;height:650px;"></div>
+	<div id="btnArea" style="position:absolute; top:10px; height:300px; left:10px;z-index:99;background-color: beige;">
+		<input type="checkbox" onclick="setSimpleMode(this.checked)" >심플모드<br/>		
+		<input type="button" onclick="createLayerWMTS()" value="브이월드WMTS"><br/>	
+		<input type="button" onclick="clearMap()" value="WMTS삭제"><br/>	
+		<input type="button" onclick="initClickEvent()" value="건물 클릭이벤트"><br/>	
+	</div>
+	<div id="infoArea" style="position:absolute; top:310px; left:10px;z-index:99;background-color: beige;">
+		레벨<input type="text" id="ilevel"><br/>
+		idx<input type="text" id="idx"><br/>
+		idy<input type="text" id="idy"><br/>		
+		xdo<input type="text" id="datafile"><br/>		
+		<p>클릭지점좌표</p>
+		lon<input type="text" id="cLon"><br/>
+		lat<input type="text" id="cLat"><br/>		
+		alt<input type="text" id="cLat"><br/>		
+		level<input type="text" id="cLevel"><br/>		
+		<p>계산정보</p>
+		레벨<input type="text" id="ilevel"><br/>
+		idx<input type="text" id="idx"><br/>
+		idy<input type="text" id="idy"><br/>		
+		xdo<input type="text" id="datafile"><br/>		
+	</div>
+</body>
+<script src="./simplemode.js"></script>
+<script src="./getIndex.js"></script>
+</html>
+
+
+

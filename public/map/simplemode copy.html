@@ -1,0 +1,19 @@
+﻿<!doctype html>
+<html>
+<head>
+	<title>듀플래닛샘플</title>
+</head>
+<body style="margin:0 0 0 0; padding:0 0 0 0;overflow: hidden;">
+	<div id="mapArea" style="position:absolute; top:0px; left:0px;width:1000px;height:650px;"></div>
+	<div id="btnArea" style="position:absolute; top:10px; left:10px;z-index:99;background-color: beige;">
+		<input type="checkbox" onclick="setSimpleMode(this.checked)" >심플모드<br/>
+		<input type="checkbox" onclick="renderingMode(this.checked)" >랜더링모드<br/>	
+		<input type="button" onclick="createLayerWMTS()" value="브이월드WMTS"><br/>	
+		<input type="button" onclick="clearMap()" value="WMTS삭제"><br/>	
+	</div>
+</body>
+<script src="./simplemode.js"></script>
+</html>
+
+
+
