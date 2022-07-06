@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#DV_Main {
+			display: block;
+			position: absolute;
+			left: -5px;
+			z-index: 9;
+			background-color: #FFFFFF;
+			padding: 10px 10px 10px 15px;
+			border-radius: 5px;
+			font-size: 13px;
+			font-weight: bold;
+			opacity: 0.9;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		var initScript = document.createElement('script');
+		initScript.src = "./init.js";
+		document.body.appendChild(initScript);
+	</script>
+	<div id="DV_Main">
+		<input type="button" value="1. importXDO" onclick="importXDO();">
+		<input type="button" value="2. exportXDO" onclick="exportXDO();">
+	</div>
+</body> 
+
+</html>
+
+
+
